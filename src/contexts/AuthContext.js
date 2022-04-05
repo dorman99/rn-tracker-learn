@@ -20,11 +20,11 @@ const signUp = (dispatch) => {
 };
 
 const signOut = (dispatch) => {
-    return ({}) => {}
+  return ({}) => {};
 };
 
 export const { Context, Provider } = createDataContext(
   authReducer,
-  {},
+  { signIn, signOut, signUp },
   { isSignedIn: false }
 );
